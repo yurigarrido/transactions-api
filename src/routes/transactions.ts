@@ -59,7 +59,8 @@ export async function transactionsRoutes(app: FastifyInstance) {
         .where('session_id', sessionId)
         .sum('amount', { as: 'amount' })
         .first()
-      return summary
+
+      return { summary }
     },
   )
 
@@ -74,7 +75,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
       request.body,
     )
 
-    let sessionId = request.cookies.sessioId
+    let sessionId = request.cookies.sessionId
 
     if (!sessionId) {
       sessionId = crypto.randomUUID()

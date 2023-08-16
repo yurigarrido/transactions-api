@@ -1,6 +1,8 @@
 node_modules
 
-db/app.db
+db/*.db
 
 .env
 .env.local
+
+build

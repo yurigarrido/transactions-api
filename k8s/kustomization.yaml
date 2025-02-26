@@ -8,4 +8,4 @@ resources:
 images:
 - name: goserver
   newName: yurigarrido/gitopsfc
-  newTag: 4a5860c34352ec3d6ad1a29c564a139a23d8c5cf
+  newTag: edc0350421f2956bc23bd13bf92c561fe9886dd5

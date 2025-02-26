@@ -21,7 +21,11 @@ export async function transactionsRoutes(app: FastifyInstance) {
         .select()
       // .where('session_id', sessionId)
 
-      return { transactions }
+      return {
+        transactions: [{
+          argo: 'funcionando'
+        }]
+      }
     },
   )
 
